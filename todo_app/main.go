@@ -2,13 +2,17 @@ package main
 
 import (
 	"fmt"
+	"golang_udemy/todo_app/app/controllers"
 	"golang_udemy/todo_app/app/models"
 	"golang_udemy/todo_app/config"
 	"log"
 )
 
 func main() {
-	fmt.Println(models.Db)
+
+	controllers.StartMainServer()
+
+	// fmt.Println(models.Db)
 
 	// configPrint()
 	// createUser()
@@ -16,11 +20,59 @@ func main() {
 	// updateUser()
 	// deleteUser()
 
-	createTodo()
+	// createTodo()
+	// getTodo()
+	// getTodos()
+	// getTodosByUser()
+	// updateTodo()
+	// deleteTodo()
+}
+
+func deleteTodo() {
+	t, _ := models.GetTodo(1)
+	fmt.Println(t)
+
+	t.DeleteTodo()
+
+	t, _ = models.GetTodo(1)
+	fmt.Println(t)
+}
+
+func updateTodo() {
+	t, _ := models.GetTodo(1)
+	fmt.Println(t)
+
+	t.Content = "update todo"
+	t.UserID = 1
+
+	err := t.UpdateTodo()
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	t, _ = models.GetTodo(1)
+	fmt.Println(t)
+}
+
+func getTodosByUser() {
+	u, _ := models.GetUser(2)
+	user, _ := u.GetTodosByUser()
+
+	fmt.Println(user)
+}
+
+func getTodos() {
+	todos, _ := models.GetTodos()
+	fmt.Println(todos)
+}
+
+func getTodo() {
+	t, _ := models.GetTodo(1)
+	fmt.Println(t)
 }
 
 func createTodo() {
-	user, _ := models.GetUser(2)
+	user, _ := models.GetUser(1)
 	user.CreateTodo("first todo")
 }
 

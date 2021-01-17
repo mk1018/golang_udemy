@@ -16,5 +16,5 @@ func top(w http.ResponseWriter, r *http.Request) {
 	// // t.Execute(w, nil)
 	// t.Execute(w, "Hello")
 
-	generateHTML(w, "Hello", "layout", "top")
+	generateHTML(w, "Hello", "layout", "public_navbar", "top")
 }

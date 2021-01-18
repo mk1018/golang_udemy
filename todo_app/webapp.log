@@ -3368,3 +3368,225 @@ net/http.(*conn).serve(0xc0005386e0, 0x847e40, 0xc00008fe00)
 	D:/Go/src/net/http/server.go:1925 +0x8ad
 created by net/http.(*Server).Serve
 	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/18 18:57:46 server.go:3095: http: panic serving [::1]:57740: template: signup.html:15: unexpected EOF
+goroutine 70 [running]:
+net/http.(*conn).serve.func1(0xc00020a140)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0xa0de60, 0xc00019f000)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0xae76c0, 0xc0001409a0, 0x0, 0x0, 0xc000255b28, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x34d
+golang_udemy/todo_app/app/controllers.signup(0xae76c0, 0xc0001409a0, 0xc00016e600)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_auth.go:6 +0xb5
+net/http.HandlerFunc.ServeHTTP(0xa8c190, 0xae76c0, 0xc0001409a0, 0xc00016e600)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xcbf320, 0xae76c0, 0xc0001409a0, 0xc00016e600)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000140000, 0xae76c0, 0xc0001409a0, 0xc00016e600)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00020a140, 0xae7e00, 0xc000294140)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/18 18:57:47 server.go:3095: http: panic serving [::1]:57743: template: signup.html:15: unexpected EOF
+goroutine 78 [running]:
+net/http.(*conn).serve.func1(0xc00020a1e0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0xa0de60, 0xc000296940)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0xae76c0, 0xc000140a80, 0x0, 0x0, 0xc0002d1b28, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x34d
+golang_udemy/todo_app/app/controllers.signup(0xae76c0, 0xc000140a80, 0xc0002de000)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_auth.go:6 +0xb5
+net/http.HandlerFunc.ServeHTTP(0xa8c190, 0xae76c0, 0xc000140a80, 0xc0002de000)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xcbf320, 0xae76c0, 0xc000140a80, 0xc0002de000)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000140000, 0xae76c0, 0xc000140a80, 0xc0002de000)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00020a1e0, 0xae7e00, 0xc000294540)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/18 18:57:47 server.go:3095: http: panic serving [::1]:57742: template: signup.html:15: unexpected EOF
+goroutine 117 [running]:
+net/http.(*conn).serve.func1(0xc0001c2140)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0xa0de60, 0xc00003fa80)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0xae76c0, 0xc00029ae00, 0x0, 0x0, 0xc0002d5b28, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x34d
+golang_udemy/todo_app/app/controllers.signup(0xae76c0, 0xc00029ae00, 0xc000204f00)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_auth.go:6 +0xb5
+net/http.HandlerFunc.ServeHTTP(0xa8c190, 0xae76c0, 0xc00029ae00, 0xc000204f00)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xcbf320, 0xae76c0, 0xc00029ae00, 0xc000204f00)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000140000, 0xae76c0, 0xc00029ae00, 0xc000204f00)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0001c2140, 0xae7e00, 0xc000294340)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/18 18:57:47 server.go:3095: http: panic serving [::1]:57758: template: signup.html:15: unexpected EOF
+goroutine 93 [running]:
+net/http.(*conn).serve.func1(0xc00028c000)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0xa0de60, 0xc00003ece0)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0xae76c0, 0xc00029a000, 0x0, 0x0, 0xc000517b28, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x34d
+golang_udemy/todo_app/app/controllers.signup(0xae76c0, 0xc00029a000, 0xc000300000)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_auth.go:6 +0xb5
+net/http.HandlerFunc.ServeHTTP(0xa8c190, 0xae76c0, 0xc00029a000, 0xc000300000)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xcbf320, 0xae76c0, 0xc00029a000, 0xc000300000)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000140000, 0xae76c0, 0xc00029a000, 0xc000300000)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00028c000, 0xae7e00, 0xc000294000)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/18 18:57:48 server.go:3095: http: panic serving [::1]:57759: template: signup.html:15: unexpected EOF
+goroutine 96 [running]:
+net/http.(*conn).serve.func1(0xc00028c0a0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0xa0de60, 0xc000090150)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0xae76c0, 0xc0001400e0, 0x0, 0x0, 0xc000517b28, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x34d
+golang_udemy/todo_app/app/controllers.signup(0xae76c0, 0xc0001400e0, 0xc000138000)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_auth.go:6 +0xb5
+net/http.HandlerFunc.ServeHTTP(0xa8c190, 0xae76c0, 0xc0001400e0, 0xc000138000)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xcbf320, 0xae76c0, 0xc0001400e0, 0xc000138000)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000140000, 0xae76c0, 0xc0001400e0, 0xc000138000)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00028c0a0, 0xae7e00, 0xc00001e040)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/18 18:57:49 server.go:3095: http: panic serving [::1]:57760: template: signup.html:15: unexpected EOF
+goroutine 145 [running]:
+net/http.(*conn).serve.func1(0xc0000ea000)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0xa0de60, 0xc000296080)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0xae76c0, 0xc00029a0e0, 0x0, 0x0, 0xc000513b28, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x34d
+golang_udemy/todo_app/app/controllers.signup(0xae76c0, 0xc00029a0e0, 0xc000300300)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_auth.go:6 +0xb5
+net/http.HandlerFunc.ServeHTTP(0xa8c190, 0xae76c0, 0xc00029a0e0, 0xc000300300)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xcbf320, 0xae76c0, 0xc00029a0e0, 0xc000300300)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000140000, 0xae76c0, 0xc00029a0e0, 0xc000300300)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000ea000, 0xae7e00, 0xc000294300)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/18 18:57:49 server.go:3095: http: panic serving [::1]:57762: template: signup.html:15: unexpected EOF
+goroutine 186 [running]:
+net/http.(*conn).serve.func1(0xc00005c000)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0xa0de60, 0xc00044cc50)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0xae76c0, 0xc0001401c0, 0x0, 0x0, 0xc000513b28, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x34d
+golang_udemy/todo_app/app/controllers.signup(0xae76c0, 0xc0001401c0, 0xc00009a500)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_auth.go:6 +0xb5
+net/http.HandlerFunc.ServeHTTP(0xa8c190, 0xae76c0, 0xc0001401c0, 0xc00009a500)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xcbf320, 0xae76c0, 0xc0001401c0, 0xc00009a500)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000140000, 0xae76c0, 0xc0001401c0, 0xc00009a500)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005c000, 0xae7e00, 0xc00019a2c0)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/18 18:57:54 server.go:3095: http: panic serving [::1]:57765: template: signup.html:15: unexpected EOF
+goroutine 187 [running]:
+net/http.(*conn).serve.func1(0xc00005c320)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0xa0de60, 0xc000090350)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0xae76c0, 0xc00029a1c0, 0x0, 0x0, 0xc000513b28, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x34d
+golang_udemy/todo_app/app/controllers.signup(0xae76c0, 0xc00029a1c0, 0xc000301100)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_auth.go:6 +0xb5
+net/http.HandlerFunc.ServeHTTP(0xa8c190, 0xae76c0, 0xc00029a1c0, 0xc000301100)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xcbf320, 0xae76c0, 0xc00029a1c0, 0xc000301100)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000140000, 0xae76c0, 0xc00029a1c0, 0xc000301100)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005c320, 0xae7e00, 0xc000294840)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/18 18:57:54 server.go:3095: http: panic serving [::1]:57766: template: signup.html:15: unexpected EOF
+goroutine 200 [running]:
+net/http.(*conn).serve.func1(0xc0000ea0a0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0xa0de60, 0xc0000904f0)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0xae76c0, 0xc0001402a0, 0x0, 0x0, 0xc000513b28, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x34d
+golang_udemy/todo_app/app/controllers.signup(0xae76c0, 0xc0001402a0, 0xc000301200)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_auth.go:6 +0xb5
+net/http.HandlerFunc.ServeHTTP(0xa8c190, 0xae76c0, 0xc0001402a0, 0xc000301200)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xcbf320, 0xae76c0, 0xc0001402a0, 0xc000301200)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000140000, 0xae76c0, 0xc0001402a0, 0xc000301200)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000ea0a0, 0xae7e00, 0xc0002948c0)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/18 18:57:54 server.go:3095: http: panic serving [::1]:57767: template: signup.html:15: unexpected EOF
+goroutine 207 [running]:
+net/http.(*conn).serve.func1(0xc0000ea140)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0xa0de60, 0xc0000905c0)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0xae76c0, 0xc00029a2a0, 0x0, 0x0, 0xc00017bb28, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x34d
+golang_udemy/todo_app/app/controllers.signup(0xae76c0, 0xc00029a2a0, 0xc000138300)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_auth.go:6 +0xb5
+net/http.HandlerFunc.ServeHTTP(0xa8c190, 0xae76c0, 0xc00029a2a0, 0xc000138300)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xcbf320, 0xae76c0, 0xc00029a2a0, 0xc000138300)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000140000, 0xae76c0, 0xc00029a2a0, 0xc000138300)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000ea140, 0xae7e00, 0xc00001e680)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/18 19:04:38 users.go:33: table todos has no column named uuid
+2021/01/18 19:08:03 users.go:33: table todos has no column named uuid

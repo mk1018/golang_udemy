@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"golang_udemy/todo_app/app/models"
 	"log"
 	"net/http"
 )
@@ -55,6 +56,46 @@ func todoSave(w http.ResponseWriter, r *http.Request) {
 			log.Println(err)
 		}
 
+		http.Redirect(w, r, "/todos", 302)
+	}
+}
+
+func todoEdit(w http.ResponseWriter, r *http.Request, id int) {
+	sess, err := session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/login", 302)
+	} else {
+		_, err := sess.GetUserBySession()
+		if err != nil {
+			log.Println(err)
+		}
+		t, err := models.GetTodo(id)
+		if err != nil {
+			log.Println(err)
+		}
+		generateHTML(w, t, "layout", "private_navbar", "todo_edit")
+	}
+}
+
+func todoUpdate(w http.ResponseWriter, r *http.Request, id int) {
+	sess, err := session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/login", 302)
+	} else {
+		_, err := sess.GetUserBySession()
+		if err != nil {
+			log.Println(err)
+		}
+		todo, err := models.GetTodo(id)
+		if err != nil {
+			log.Println(err)
+		}
+
+		todo.Content = r.PostFormValue("content")
+
+		if err := todo.UpdateTodo(); err != nil {
+			log.Println(err)
+		}
 		http.Redirect(w, r, "/todos", 302)
 	}
 }

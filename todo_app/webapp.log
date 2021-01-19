@@ -3590,3 +3590,1059 @@ created by net/http.(*Server).Serve
 	D:/Go/src/net/http/server.go:2969 +0x36d
 2021/01/18 19:04:38 users.go:33: table todos has no column named uuid
 2021/01/18 19:08:03 users.go:33: table todos has no column named uuid
+2021/01/19 20:48:37 server.go:3095: http: panic serving [::1]:61089: template: index.html:8: function "rand" not defined
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc00005cfa0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc00003ef60)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc0001b2000, 0x0, 0x0, 0xc0000a1a68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc0001b2000, 0xc0000a8000)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc0001b2000, 0xc0000a8000)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc0001b2000, 0xc0000a8000)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc0001b2000, 0xc0000a8000)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005cfa0, 0x7e0e60, 0xc00008e000)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:48:37 server.go:3095: http: panic serving [::1]:61090: template: index.html:8: function "rand" not defined
+goroutine 18 [running]:
+net/http.(*conn).serve.func1(0xc000188000)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc00003f070)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc0001b20e0, 0x0, 0x0, 0xc00009da68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc0001b20e0, 0xc0000a8100)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc0001b20e0, 0xc0000a8100)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc0001b20e0, 0xc0000a8100)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc0001b20e0, 0xc0000a8100)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000188000, 0x7e0e60, 0xc00008e0c0)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:48:38 server.go:3095: http: panic serving [::1]:61091: template: index.html:8: function "rand" not defined
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc0000b2000)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc00003f290)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc0001420e0, 0x0, 0x0, 0xc00009da68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc0001420e0, 0xc00010aa00)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc0001420e0, 0xc00010aa00)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc0001420e0, 0xc00010aa00)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc0001420e0, 0xc00010aa00)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000b2000, 0x7e0e60, 0xc00001e980)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:48:39 server.go:3095: http: panic serving [::1]:61093: template: index.html:8: function "rand" not defined
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc0000b20a0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc0001ae690)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc0001b21c0, 0x0, 0x0, 0xc00009da68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc0001b21c0, 0xc0001d0800)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc0001b21c0, 0xc0001d0800)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc0001b21c0, 0xc0001d0800)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc0001b21c0, 0xc0001d0800)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000b20a0, 0x7e0e60, 0xc0001aa600)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:48:39 server.go:3095: http: panic serving [::1]:61094: template: index.html:8: function "rand" not defined
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0xc0001880a0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc000090080)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc0001b22a0, 0x0, 0x0, 0xc0001eda68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc0001b22a0, 0xc0000a8200)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc0001b22a0, 0xc0000a8200)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc0001b22a0, 0xc0000a8200)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc0001b22a0, 0xc0000a8200)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0001880a0, 0x7e0e60, 0xc00008e180)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:48:39 server.go:3095: http: panic serving [::1]:61095: template: index.html:8: function "rand" not defined
+goroutine 14 [running]:
+net/http.(*conn).serve.func1(0xc00005d040)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc0001ae9e0)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc0001421c0, 0x0, 0x0, 0xc0000a1a68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc0001421c0, 0xc00010ad00)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc0001421c0, 0xc00010ad00)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc0001421c0, 0xc00010ad00)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc0001421c0, 0xc00010ad00)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005d040, 0x7e0e60, 0xc00001ec00)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:48:43 server.go:3095: http: panic serving [::1]:61099: template: index.html:8: function "rand" not defined
+goroutine 52 [running]:
+net/http.(*conn).serve.func1(0xc000188140)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc0001aeaa0)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc0000e22a0, 0x0, 0x0, 0xc00009da68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc0000e22a0, 0xc0000a8400)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc0000e22a0, 0xc0000a8400)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc0000e22a0, 0xc0000a8400)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc0000e22a0, 0xc0000a8400)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000188140, 0x7e0e60, 0xc00008e280)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:48:43 server.go:3095: http: panic serving [::1]:61100: template: index.html:8: function "rand" not defined
+goroutine 53 [running]:
+net/http.(*conn).serve.func1(0xc0001881e0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc0001aed50)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc0001b2460, 0x0, 0x0, 0xc00009da68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc0001b2460, 0xc00010b000)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc0001b2460, 0xc00010b000)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc0001b2460, 0xc00010b000)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc0001b2460, 0xc00010b000)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0001881e0, 0x7e0e60, 0xc00001ee40)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:48:43 server.go:3095: http: panic serving [::1]:61101: template: index.html:8: function "rand" not defined
+goroutine 59 [running]:
+net/http.(*conn).serve.func1(0xc000188280)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc0001aedb0)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc000142380, 0x0, 0x0, 0xc0000a1a68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc000142380, 0xc00010b300)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc000142380, 0xc00010b300)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc000142380, 0xc00010b300)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc000142380, 0xc00010b300)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000188280, 0x7e0e60, 0xc00001ef40)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:48:44 server.go:3095: http: panic serving [::1]:61103: template: index.html:8: function "rand" not defined
+goroutine 60 [running]:
+net/http.(*conn).serve.func1(0xc000188320)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc00003f7b0)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc0001b2540, 0x0, 0x0, 0xc0000a1a68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc0001b2540, 0xc0000a8700)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc0001b2540, 0xc0000a8700)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc0001b2540, 0xc0000a8700)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc0001b2540, 0xc0000a8700)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000188320, 0x7e0e60, 0xc00008e500)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:48:44 server.go:3095: http: panic serving [::1]:61104: template: index.html:8: function "rand" not defined
+goroutine 71 [running]:
+net/http.(*conn).serve.func1(0xc00005d0e0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc00003fa50)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc000142460, 0x0, 0x0, 0xc00009da68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc000142460, 0xc0002b4200)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc000142460, 0xc0002b4200)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc000142460, 0xc0002b4200)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc000142460, 0xc0002b4200)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005d0e0, 0x7e0e60, 0xc0001ab540)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:48:44 server.go:3095: http: panic serving [::1]:61105: template: index.html:8: function "rand" not defined
+goroutine 77 [running]:
+net/http.(*conn).serve.func1(0xc00005d180)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc000090370)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc000142540, 0x0, 0x0, 0xc00009da68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc000142540, 0xc0002b4700)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc000142540, 0xc0002b4700)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc000142540, 0xc0002b4700)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc000142540, 0xc0002b4700)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005d180, 0x7e0e60, 0xc0001ab880)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:48:49 server.go:3095: http: panic serving [::1]:61108: template: index.html:8: function "rand" not defined
+goroutine 80 [running]:
+net/http.(*conn).serve.func1(0xc00005d220)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc0001af330)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc0001b2620, 0x0, 0x0, 0xc0001eda68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc0001b2620, 0xc0002b4c00)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc0001b2620, 0xc0002b4c00)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc0001b2620, 0xc0002b4c00)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc0001b2620, 0xc0002b4c00)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005d220, 0x7e0e60, 0xc0001abac0)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:48:49 server.go:3095: http: panic serving [::1]:61109: template: index.html:8: function "rand" not defined
+goroutine 82 [running]:
+net/http.(*conn).serve.func1(0xc0001883c0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc000090410)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc0001b2700, 0x0, 0x0, 0xc0001eda68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc0001b2700, 0xc00026a400)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc0001b2700, 0xc00026a400)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc0001b2700, 0xc00026a400)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc0001b2700, 0xc00026a400)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0001883c0, 0x7e0e60, 0xc00001f8c0)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:48:49 server.go:3095: http: panic serving [::1]:61110: template: index.html:8: function "rand" not defined
+goroutine 40 [running]:
+net/http.(*conn).serve.func1(0xc0000b2140)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc000090510)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc0001b27e0, 0x0, 0x0, 0xc0001e9a68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc0001b27e0, 0xc0000a8a00)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc0001b27e0, 0xc0000a8a00)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc0001b27e0, 0xc0000a8a00)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc0001b27e0, 0xc0000a8a00)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000b2140, 0x7e0e60, 0xc00008e780)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:16 server.go:3095: http: panic serving [::1]:61117: template: index.html:8: function "rand" not defined
+goroutine 98 [running]:
+net/http.(*conn).serve.func1(0xc00005d2c0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc000090620)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc000142620, 0x0, 0x0, 0xc0001e9a68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc000142620, 0xc0000a8f00)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc000142620, 0xc0000a8f00)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc000142620, 0xc0000a8f00)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc000142620, 0xc0000a8f00)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005d2c0, 0x7e0e60, 0xc00008e940)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:16 server.go:3095: http: panic serving [::1]:61118: template: index.html:8: function "rand" not defined
+goroutine 43 [running]:
+net/http.(*conn).serve.func1(0xc0000b21e0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc00003feb0)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc0000e2380, 0x0, 0x0, 0xc0001eda68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc0000e2380, 0xc0000a9000)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc0000e2380, 0xc0000a9000)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc0000e2380, 0xc0000a9000)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc0000e2380, 0xc0000a9000)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000b21e0, 0x7e0e60, 0xc00008e9c0)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:16 server.go:3095: http: panic serving [::1]:61119: template: index.html:8: function "rand" not defined
+goroutine 92 [running]:
+net/http.(*conn).serve.func1(0xc000188460)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc00003ff60)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc0001b28c0, 0x0, 0x0, 0xc0001eda68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc0001b28c0, 0xc0000a9900)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc0001b28c0, 0xc0000a9900)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc0001b28c0, 0xc0000a9900)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc0001b28c0, 0xc0000a9900)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000188460, 0x7e0e60, 0xc00008ef40)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:16 server.go:3095: http: panic serving [::1]:61120: template: index.html:8: function "rand" not defined
+goroutine 114 [running]:
+net/http.(*conn).serve.func1(0xc0000b2280)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc000366060)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc0001b29a0, 0x0, 0x0, 0xc0001e9a68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc0001b29a0, 0xc00026ab00)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc0001b29a0, 0xc00026ab00)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc0001b29a0, 0xc00026ab00)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc0001b29a0, 0xc00026ab00)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000b2280, 0x7e0e60, 0xc00001fe40)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:16 server.go:3095: http: panic serving [::1]:61121: template: index.html:8: function "rand" not defined
+goroutine 95 [running]:
+net/http.(*conn).serve.func1(0xc000188500)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc000090980)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc000142700, 0x0, 0x0, 0xc00009da68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc000142700, 0xc0000a9c00)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc000142700, 0xc0000a9c00)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc000142700, 0xc0000a9c00)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc000142700, 0xc0000a9c00)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000188500, 0x7e0e60, 0xc00008f080)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:16 server.go:3095: http: panic serving [::1]:61122: template: index.html:8: function "rand" not defined
+goroutine 130 [running]:
+net/http.(*conn).serve.func1(0xc0001885a0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc000090b90)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc0000e2460, 0x0, 0x0, 0xc0001e9a68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc0000e2460, 0xc000422100)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc0000e2460, 0xc000422100)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc0000e2460, 0xc000422100)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc0000e2460, 0xc000422100)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0001885a0, 0x7e0e60, 0xc00008f300)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:16 server.go:3095: http: panic serving [::1]:61123: template: index.html:8: function "rand" not defined
+goroutine 108 [running]:
+net/http.(*conn).serve.func1(0xc00005d360)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc0001afab0)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc0000e2540, 0x0, 0x0, 0xc0001e9a68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc0000e2540, 0xc00026b600)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc0000e2540, 0xc00026b600)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc0000e2540, 0xc00026b600)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc0000e2540, 0xc00026b600)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005d360, 0x7e0e60, 0xc00037c380)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:16 server.go:3095: http: panic serving [::1]:61124: template: index.html:8: function "rand" not defined
+goroutine 109 [running]:
+net/http.(*conn).serve.func1(0xc00005d400)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc000090e30)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc0001b2a80, 0x0, 0x0, 0xc0001e9a68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc0001b2a80, 0xc00026b700)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc0001b2a80, 0xc00026b700)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc0001b2a80, 0xc00026b700)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc0001b2a80, 0xc00026b700)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005d400, 0x7e0e60, 0xc00037c400)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:16 server.go:3095: http: panic serving [::1]:61125: template: index.html:8: function "rand" not defined
+goroutine 123 [running]:
+net/http.(*conn).serve.func1(0xc0000b2320)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x7056a0, 0xc0001afd90)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x7e0720, 0xc0000e2620, 0x0, 0x0, 0xc0000a1a68, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x7e0720, 0xc0000e2620, 0xc000422a00)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x28f
+net/http.HandlerFunc.ServeHTTP(0x784668, 0x7e0720, 0xc0000e2620, 0xc000422a00)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9bc360, 0x7e0720, 0xc0000e2620, 0xc000422a00)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x7e0720, 0xc0000e2620, 0xc000422a00)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000b2320, 0x7e0e60, 0xc00008f940)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:24 server.go:3095: http: panic serving [::1]:61129: template: index.html:8: function "rand" not defined
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc00005cfa0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc000186070)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc0001420e0, 0x898ea0, 0xc00014a200, 0xc00019b9f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc0001420e0, 0xc0001a2000)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc0001420e0, 0xc0001a2000)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc0001420e0, 0xc0001a2000)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc0001420e0, 0xc0001a2000)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005cfa0, 0x930e80, 0xc000184000)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:24 server.go:3095: http: panic serving [::1]:61130: template: index.html:8: function "rand" not defined
+goroutine 18 [running]:
+net/http.(*conn).serve.func1(0xc000092000)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc0000a0070)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc0001fa000, 0x898ea0, 0xc0001ce280, 0xc0001979f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc0001fa000, 0xc0001a2100)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc0001fa000, 0xc0001a2100)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc0001fa000, 0xc0001a2100)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc0001fa000, 0xc0001a2100)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000092000, 0x930e80, 0xc0001840c0)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:24 server.go:3095: http: panic serving [::1]:61131: template: index.html:8: function "rand" not defined
+goroutine 12 [running]:
+net/http.(*conn).serve.func1(0xc00005d040)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc000186390)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc0001421c0, 0x898ea0, 0xc00014a580, 0xc0001679f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc0001421c0, 0xc0001a2900)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc0001421c0, 0xc0001a2900)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc0001421c0, 0xc0001a2900)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc0001421c0, 0xc0001a2900)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005d040, 0x930e80, 0xc0001845c0)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:25 server.go:3095: http: panic serving [::1]:61132: template: index.html:8: function "rand" not defined
+goroutine 16 [running]:
+net/http.(*conn).serve.func1(0xc00005d0e0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc000186440)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc0000de000, 0x898ea0, 0xc00009c280, 0xc00019b9f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc0000de000, 0xc0000d0000)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc0000de000, 0xc0000d0000)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc0000de000, 0xc0000d0000)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc0000de000, 0xc0000d0000)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005d0e0, 0x930e80, 0xc0000a6080)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:25 server.go:3095: http: panic serving [::1]:61133: template: index.html:8: function "rand" not defined
+goroutine 19 [running]:
+net/http.(*conn).serve.func1(0xc0000920a0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc0001866a0)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc0001fa0e0, 0x898ea0, 0xc0001ce680, 0xc00019b9f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc0001fa0e0, 0xc00010ac00)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc0001fa0e0, 0xc00010ac00)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc0001fa0e0, 0xc00010ac00)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc0001fa0e0, 0xc00010ac00)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000920a0, 0x930e80, 0xc00001eb40)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:25 server.go:3095: http: panic serving [::1]:61134: template: index.html:8: function "rand" not defined
+goroutine 43 [running]:
+net/http.(*conn).serve.func1(0xc00023c000)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc0000a02b0)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc0001fa1c0, 0x898ea0, 0xc0001cea80, 0xc0001979f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc0001fa1c0, 0xc0000d0300)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc0001fa1c0, 0xc0000d0300)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc0001fa1c0, 0xc0000d0300)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc0001fa1c0, 0xc0000d0300)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00023c000, 0x930e80, 0xc0000a6340)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:25 server.go:3095: http: panic serving [::1]:61135: template: index.html:8: function "rand" not defined
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0xc000092140)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc0000a0310)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc0001422a0, 0x898ea0, 0xc00014a880, 0xc0001679f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc0001422a0, 0xc00010b100)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc0001422a0, 0xc00010b100)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc0001422a0, 0xc00010b100)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc0001422a0, 0xc00010b100)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000092140, 0x930e80, 0xc00001ee00)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:25 server.go:3095: http: panic serving [::1]:61136: template: index.html:8: function "rand" not defined
+goroutine 52 [running]:
+net/http.(*conn).serve.func1(0xc00005d180)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc0000a0380)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc000142380, 0x898ea0, 0xc00014ab00, 0xc0001679f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc000142380, 0xc0001a3800)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc000142380, 0xc0001a3800)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc000142380, 0xc0001a3800)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc000142380, 0xc0001a3800)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005d180, 0x930e80, 0xc000184e40)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:25 server.go:3095: http: panic serving [::1]:61137: template: index.html:8: function "rand" not defined
+goroutine 60 [running]:
+net/http.(*conn).serve.func1(0xc00005d220)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc0000a0640)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc0000de0e0, 0x898ea0, 0xc00009c600, 0xc0001979f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc0000de0e0, 0xc0000d0400)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc0000de0e0, 0xc0000d0400)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc0000de0e0, 0xc0000d0400)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc0000de0e0, 0xc0000d0400)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005d220, 0x930e80, 0xc0000a64c0)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:26 server.go:3095: http: panic serving [::1]:61138: template: index.html:8: function "rand" not defined
+goroutine 27 [running]:
+net/http.(*conn).serve.func1(0xc0000921e0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc0001869b0)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc000142460, 0x898ea0, 0xc00014ae00, 0xc0001679f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc000142460, 0xc0001a3b00)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc000142460, 0xc0001a3b00)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc000142460, 0xc0001a3b00)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc000142460, 0xc0001a3b00)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000921e0, 0x930e80, 0xc000184f80)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:26 server.go:3095: http: panic serving [::1]:61139: template: index.html:8: function "rand" not defined
+goroutine 61 [running]:
+net/http.(*conn).serve.func1(0xc00005d2c0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc0000a0770)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc000142540, 0x898ea0, 0xc00014b100, 0xc0001639f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc000142540, 0xc0000d0b00)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc000142540, 0xc0000d0b00)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc000142540, 0xc0000d0b00)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc000142540, 0xc0000d0b00)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005d2c0, 0x930e80, 0xc0000a6900)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:26 server.go:3095: http: panic serving [::1]:61140: template: index.html:8: function "rand" not defined
+goroutine 30 [running]:
+net/http.(*conn).serve.func1(0xc000092280)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc000186a60)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc0000de1c0, 0x898ea0, 0xc00009c980, 0xc0001639f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc0000de1c0, 0xc0000d1100)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc0000de1c0, 0xc0000d1100)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc0000de1c0, 0xc0000d1100)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc0000de1c0, 0xc0000d1100)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000092280, 0x930e80, 0xc0000a6b80)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:26 server.go:3095: http: panic serving [::1]:61141: template: index.html:8: function "rand" not defined
+goroutine 69 [running]:
+net/http.(*conn).serve.func1(0xc00005d360)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc0000a0bb0)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc0000de2a0, 0x898ea0, 0xc00009cc80, 0xc00019b9f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc0000de2a0, 0xc0001a3e00)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc0000de2a0, 0xc0001a3e00)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc0000de2a0, 0xc0001a3e00)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc0000de2a0, 0xc0001a3e00)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005d360, 0x930e80, 0xc000185100)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:26 server.go:3095: http: panic serving [::1]:61142: template: index.html:8: function "rand" not defined
+goroutine 82 [running]:
+net/http.(*conn).serve.func1(0xc00023c0a0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc0000a0e50)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc0000de380, 0x898ea0, 0xc00009cf80, 0xc00019b9f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc0000de380, 0xc0000d1400)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc0000de380, 0xc0000d1400)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc0000de380, 0xc0000d1400)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc0000de380, 0xc0000d1400)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00023c0a0, 0x930e80, 0xc0000a6e80)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:26 server.go:3095: http: panic serving [::1]:61143: template: index.html:8: function "rand" not defined
+goroutine 104 [running]:
+net/http.(*conn).serve.func1(0xc000092320)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc00003fcb0)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc0000de460, 0x898ea0, 0xc00009d200, 0xc00019b9f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc0000de460, 0xc0002a4700)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc0000de460, 0xc0002a4700)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc0000de460, 0xc0002a4700)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc0000de460, 0xc0002a4700)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000092320, 0x930e80, 0xc00001fc00)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:26 server.go:3095: http: panic serving [::1]:61144: template: index.html:8: function "rand" not defined
+goroutine 108 [running]:
+net/http.(*conn).serve.func1(0xc0000923c0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc000186d30)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc0001fa2a0, 0x898ea0, 0xc0001cee00, 0xc0001639f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc0001fa2a0, 0xc0001a3f00)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc0001fa2a0, 0xc0001a3f00)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc0001fa2a0, 0xc0001a3f00)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc0001fa2a0, 0xc0001a3f00)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000923c0, 0x930e80, 0xc000185200)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:26 server.go:3095: http: panic serving [::1]:61145: template: index.html:8: function "rand" not defined
+goroutine 83 [running]:
+net/http.(*conn).serve.func1(0xc00023c140)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc00003fd20)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc0001fa380, 0x898ea0, 0xc0001cf100, 0xc0001639f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc0001fa380, 0xc0002a4a00)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc0001fa380, 0xc0002a4a00)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc0001fa380, 0xc0002a4a00)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc0001fa380, 0xc0002a4a00)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00023c140, 0x930e80, 0xc00001fd40)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:26 server.go:3095: http: panic serving [::1]:61146: template: index.html:8: function "rand" not defined
+goroutine 72 [running]:
+net/http.(*conn).serve.func1(0xc00005d400)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc00003fe40)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc0000de540, 0x898ea0, 0xc00009d500, 0xc00019b9f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc0000de540, 0xc000278c00)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc0000de540, 0xc000278c00)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc0000de540, 0xc000278c00)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc0000de540, 0xc000278c00)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005d400, 0x930e80, 0xc0001859c0)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:27 server.go:3095: http: panic serving [::1]:61147: template: index.html:8: function "rand" not defined
+goroutine 92 [running]:
+net/http.(*conn).serve.func1(0xc00023c1e0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc00003ff50)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc0001fa460, 0x898ea0, 0xc0001cf400, 0xc0001679f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc0001fa460, 0xc0002a5000)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc0001fa460, 0xc0002a5000)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc0001fa460, 0xc0002a5000)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc0001fa460, 0xc0002a5000)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00023c1e0, 0x930e80, 0xc0002e0000)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:27 server.go:3095: http: panic serving [::1]:61148: template: index.html:8: function "rand" not defined
+goroutine 75 [running]:
+net/http.(*conn).serve.func1(0xc00005d4a0)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc0002fe1c0)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc000142620, 0x898ea0, 0xc00014b680, 0xc0001679f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc000142620, 0xc000278d00)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc000142620, 0xc000278d00)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc000142620, 0xc000278d00)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc000142620, 0xc000278d00)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005d4a0, 0x930e80, 0xc000185a40)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:49:27 server.go:3095: http: panic serving [::1]:61149: template: index.html:8: function "rand" not defined
+goroutine 96 [running]:
+net/http.(*conn).serve.func1(0xc00023c280)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc0000a12e0)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc000142700, 0x898ea0, 0xc00014b980, 0xc0001679f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc000142700, 0xc0002a5900)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc000142700, 0xc0002a5900)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc000142700, 0xc0002a5900)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc000142700, 0xc0002a5900)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00023c280, 0x930e80, 0xc0002e05c0)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:50:51 server.go:3095: http: panic serving [::1]:61151: template: index.html:9: unexpected EOF
+goroutine 115 [running]:
+net/http.(*conn).serve.func1(0xc00005d540)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc0002fea50)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc0001429a0, 0x898ea0, 0xc000520280, 0xc0001679f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc0001429a0, 0xc00051c900)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc0001429a0, 0xc00051c900)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc0001429a0, 0xc00051c900)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc0001429a0, 0xc00051c900)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005d540, 0x930e80, 0xc0004800c0)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:50:51 server.go:3095: http: panic serving [::1]:61199: template: index.html:9: unexpected EOF
+goroutine 124 [running]:
+net/http.(*conn).serve.func1(0xc00005d680)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc00003e3d0)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc000142a80, 0x898ea0, 0xc000520580, 0xc0001679f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc000142a80, 0xc00037ae00)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc000142a80, 0xc00037ae00)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc000142a80, 0xc00037ae00)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc000142a80, 0xc00037ae00)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005d680, 0x930e80, 0xc0000a7d40)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/19 20:50:51 server.go:3095: http: panic serving [::1]:61200: template: index.html:9: unexpected EOF
+goroutine 142 [running]:
+net/http.(*conn).serve.func1(0xc00005c000)
+	D:/Go/src/net/http/server.go:1801 +0x147
+panic(0x8556a0, 0xc0000a0130)
+	D:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	D:/Go/src/text/template/helper.go:23
+golang_udemy/todo_app/app/controllers.generateHTML(0x930740, 0xc0001420e0, 0x898ea0, 0xc0001ce200, 0xc0004e19f0, 0x3, 0x3)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/server.go:17 +0x2be
+golang_udemy/todo_app/app/controllers.index(0x930740, 0xc0001420e0, 0xc000070000)
+	C:/Users/ktmn1/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x339
+net/http.HandlerFunc.ServeHTTP(0x8d4668, 0x930740, 0xc0001420e0, 0xc000070000)
+	D:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xb0c360, 0x930740, 0xc0001420e0, 0xc000070000)
+	D:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000142000, 0x930740, 0xc0001420e0, 0xc000070000)
+	D:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005c000, 0x930e80, 0xc0002e0000)
+	D:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2969 +0x36d

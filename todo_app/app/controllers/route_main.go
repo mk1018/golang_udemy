@@ -82,7 +82,7 @@ func todoUpdate(w http.ResponseWriter, r *http.Request, id int) {
 	if err != nil {
 		http.Redirect(w, r, "/login", 302)
 	} else {
-		_, err := sess.GetUserBySession()
+		user, err := sess.GetUserBySession()
 		if err != nil {
 			log.Println(err)
 		}
@@ -92,10 +92,34 @@ func todoUpdate(w http.ResponseWriter, r *http.Request, id int) {
 		}
 
 		todo.Content = r.PostFormValue("content")
+		todo.UserID = user.ID
 
 		if err := todo.UpdateTodo(); err != nil {
 			log.Println(err)
 		}
+		http.Redirect(w, r, "/todos", 302)
+	}
+}
+
+func todoDelete(w http.ResponseWriter, r *http.Request, id int) {
+	sess, err := session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/login", 302)
+	} else {
+		_, err := sess.GetUserBySession()
+		if err != nil {
+			log.Println(err)
+		}
+
+		todo, err := models.GetTodo(id)
+		if err != nil {
+			log.Println(err)
+		}
+
+		if err := todo.DeleteTodo(); err != nil {
+			log.Println(err)
+		}
+
 		http.Redirect(w, r, "/todos", 302)
 	}
 }
